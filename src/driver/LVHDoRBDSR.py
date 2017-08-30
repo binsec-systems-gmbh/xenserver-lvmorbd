@@ -20,7 +20,8 @@ import LVHDSR, VDI, scsiutil, SR, SRCommand, util, xs_errors, xmlrpclib, LUNperV
 import socket, os, copy
 
 CAPABILITIES = ['SR_PROBE','VDI_CREATE','VDI_DELETE','VDI_ATTACH',
-                'VDI_DETACH', 'VDI_INTRODUCE']
+                'VDI_DETACH', 'VDI_CLONE', 'VDI_SNAPSHOT', 'VID_RESIZE',
+                'VDI_INTRODUCE']
 
 CONFIGURATION = [ [ 'image', 'The rbd image name' ], \
                   [ 'target', 'IP address or hostname of the ceph monitor' ], \
